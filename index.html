@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>テモト — 端末の中で仕事を終わらせる道具</title>
+<meta name="description" content="テモトは、手元の端末だけで仕事が終わる道具をつくっています。おこしがき（オフライン文字起こし）、まとめPDF（PDFの結合・分割）。">
+<style>
+  :root{
+    color-scheme: light dark;
+    --ink:#171a1d; --sub:#5c636b; --line:#e2e5e8; --bg:#fbfaf8; --card:#ffffff;
+    --accent:#215c85; --accent-soft:#eef3f8;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --ink:#eceff2; --sub:#a3abb4; --line:#2a2f35; --bg:#131619; --card:#1a1e22;
+           --accent:#7fb6de; --accent-soft:#1c2830; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);line-height:1.85;
+       font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;
+       -webkit-font-smoothing:antialiased}
+  .wrap{max-width:46rem;margin:0 auto;padding:0 1.3rem}
+  header{padding:4.5rem 0 3rem}
+  .brand{font-size:1.05rem;font-weight:700;letter-spacing:.22em;color:var(--accent)}
+  h1{font-size:clamp(1.7rem,5vw,2.4rem);margin:.9rem 0 .7rem;line-height:1.45;letter-spacing:.01em}
+  .lead{color:var(--sub);margin:0;max-width:34rem}
+  nav{border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+      position:sticky;top:0;background:color-mix(in srgb,var(--bg) 92%,transparent);
+      backdrop-filter:saturate(180%) blur(12px);z-index:5}
+  nav ul{display:flex;gap:1.6rem;list-style:none;margin:0;padding:.85rem 0;font-size:.9rem;overflow-x:auto}
+  nav a{color:var(--sub);text-decoration:none;white-space:nowrap}
+  nav a:hover{color:var(--accent)}
+  section{padding:3.2rem 0;border-bottom:1px solid var(--line)}
+  section:last-of-type{border-bottom:0}
+  h2{font-size:1.3rem;margin:0 0 1.4rem;scroll-margin-top:4.5rem}
+  h3{font-size:1rem;margin:1.7rem 0 .4rem}
+  .app{background:var(--card);border:1px solid var(--line);border-radius:.9rem;
+       padding:1.5rem 1.6rem;margin-bottom:1.2rem}
+  .app h3{margin-top:0;font-size:1.15rem;display:flex;align-items:baseline;gap:.6rem;flex-wrap:wrap}
+  .tag{font-size:.72rem;font-weight:600;letter-spacing:.06em;color:var(--accent);
+       background:var(--accent-soft);padding:.16rem .55rem;border-radius:.4rem}
+  .app p{margin:.5rem 0 0;color:var(--sub);font-size:.95rem}
+  .policy{background:var(--card);border:1px solid var(--line);border-radius:.9rem;padding:1.3rem 1.5rem}
+  .policy p{font-size:.93rem;margin:.5rem 0 0}
+  a{color:var(--accent)}
+  footer{padding:2.6rem 0 4rem;color:var(--sub);font-size:.82rem}
+  .rev{margin-top:1.4rem;font-size:.78rem;color:var(--sub)}
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <div class="brand">テモト</div>
+  <h1>端末の中で、仕事を終わらせる。</h1>
+  <p class="lead">預けなくても済むことは、預けない。手元の iPhone だけで完結する道具をつくっています。</p>
+</header>
+
+<nav><div class="wrap"><ul>
+  <li><a href="#apps">アプリ</a></li>
+  <li><a href="#support">サポート</a></li>
+  <li><a href="#privacy">プライバシーポリシー</a></li>
+</ul></div></nav>
+
+<section class="wrap" id="apps">
+  <h2>アプリ</h2>
+
+  <div class="app">
+    <h3>おこしがき <span class="tag">文字起こし・議事録</span></h3>
+    <p>録音した音声を、端末の外に一切出さずに文字にします。通信を一度も行わないので、機内モードのままでも最後まで動きます。時間の上限はなく、買い切りです。</p>
+  </div>
+
+  <div class="app">
+    <h3>まとめPDF <span class="tag">PDFの結合・分割</span></h3>
+    <p>PDF をまとめる、分ける、並べ替える、回す、抜き出す。写真から PDF もつくれます。処理はすべて端末内で行い、ファイルをどこかへ送ることはありません。</p>
+  </div>
+</section>
+
+<section class="wrap" id="support">
+  <h2>サポート・お問い合わせ</h2>
+  <p>不具合のご報告、ご質問、ご要望は、X（旧Twitter）の DM またはリプライにてご連絡ください。</p>
+  <ul><li>X（旧Twitter）: <a href="https://x.com/study_proof" target="_blank" rel="noopener">@study_proof</a></li></ul>
+  <p style="color:var(--sub);font-size:.9rem">お寄せいただいたご意見・不具合報告には順次対応いたします。</p>
+
+  <h3>よくあるご質問</h3>
+  <div class="policy">
+    <p><strong>おこしがきで「端末内認識が使えません」と出ます。</strong><br>
+    iPhone の音声入力が無効になっている可能性があります。設定 → 一般 → キーボード → 音声入力 をオンにし、日本語のキーボードが追加されていることをご確認のうえ、アプリを開き直してください。</p>
+    <p><strong>機種変更したら買い直しになりますか。</strong><br>
+    なりません。同じ Apple アカウントであれば、各アプリの設定画面から「購入を復元する」で元に戻せます。</p>
+    <p><strong>アプリを消したらデータはどうなりますか。</strong><br>
+    すべて消えます。端末の中だけに保存しているため、どこにも控えはありません。残したいものは、あらかじめ書き出してください。</p>
+  </div>
+</section>
+
+<section class="wrap" id="privacy">
+  <h2>プライバシーポリシー</h2>
+
+  <h3 id="okoshigaki">おこしがき (Okoshigaki)</h3>
+  <div class="policy">
+    <p>本アプリは外部サーバーを持たず、ネットワーク通信を一切行いません。開発者がユーザーの情報を収集・保持することはありません。解析SDK・広告SDK・トラッキングの仕組みも入れていません。録音した音声、文字起こしの結果、要約や設定は、すべてお使いの端末内にのみ保存されます。</p>
+    <p><strong>マイクと音声認識の利用について</strong><br>
+    本アプリは、録音のためにマイクへのアクセスを求めます。録音された音声は端末内のファイルとして保存され、外部へ送信されることはありません。文字起こしには、iOS が端末内で提供する音声認識機能のみを使用します。サーバーを用いた認識は明示的に無効にしており、端末内で処理できない場合は、外部へ送信するのではなく処理を中止します。マイクおよび音声認識へのアクセスは、iOS の設定からいつでも許可を取り消すことができます（その場合、録音および文字起こしはご利用いただけません）。</p>
+    <p><strong>AI機能について</strong><br>
+    Apple Intelligence に対応した端末では、文字起こしの結果から短い要約文を作成します。この処理は Apple が端末内で提供する言語モデルによって行われ、インターネットへの送信は発生しません。対応していない端末では、本文中の文をそのまま拾い出して表示するのみで、こちらも端末内で完結します。</p>
+    <p><strong>アプリ内課金について</strong><br>
+    文字起こしの時間と件数の上限を解除するアプリ内課金（買い切り・自動更新ではありません）をご用意しています。決済は Apple（App Store）が行い、開発者がクレジットカード情報などの決済情報を取得することはありません。本アプリは購入の有無の判定のみを端末内で行います。利用規約は Apple の標準EULA（<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">Apple License Agreement</a>）に従います。</p>
+    <p><strong>データの削除</strong><br>
+    録音は一覧からスワイプして削除できます。削除すると、音声ファイルと文字起こしの結果は端末から消去されます。アプリを削除した場合も同様です。端末内にのみ保存しているため、開発者側に控えは存在しません。</p>
+  </div>
+
+  <h3 id="matomepdf">まとめPDF (MatomePDF)</h3>
+  <div class="policy">
+    <p>本アプリは外部サーバーを持たず、開発者がユーザーの情報を収集・保持することはありません。お選びいただいた PDF や画像、作成された PDF は、すべてお使いの端末内で処理されます。ファイルの中身が開発者や第三者へ送信されることはありません。</p>
+    <p><strong>ファイルへのアクセスについて</strong><br>
+    本アプリは、ユーザーが「ファイル」アプリや写真から明示的に選択したファイルのみを読み込みます。選択されていないファイルにアクセスすることはありません。作成した PDF は、ユーザーが保存先を指定した場合にのみ書き出されます。</p>
+    <p><strong>広告およびトラッキングについて</strong><br>
+    本アプリには広告表示機能があり、広告配信のためにサードパーティの広告SDK（Google AdMob）を使用しています。広告SDK は、広告の表示・最適化のために広告識別子（IDFA等）や大まかな位置情報などを収集する場合があります。<br>
+    本アプリでは、App Tracking Transparency（ATT）の枠組みに基づき、トラッキングの許可を求めるダイアログを表示します。許可しなかった場合、行動履歴に基づかない広告（非パーソナライズド広告）が表示されます。許可状況は、iOS の「設定 &gt; プライバシーとセキュリティ &gt; トラッキング」からいつでも確認・変更できます。収集される情報の詳細は、各広告配信事業者のプライバシーポリシーをご確認ください。<br>
+    <strong>なお、広告SDK に PDF や画像の中身が渡ることは一切ありません。</strong></p>
+    <p><strong>広告非表示（買い切り課金）について</strong><br>
+    広告を非表示にするアプリ内課金（買い切り）をご用意しています。この課金は、アプリの継続的な開発・保守運営を目的とした任意のオプションであり、PDF の結合・分割などの機能はすべて無料範囲でご利用いただけます。決済は Apple（App Store）が行い、開発者が決済情報を取得することはありません。</p>
+    <p><strong>データの削除</strong><br>
+    アプリ内に作業中のファイルの控えを残しません。アプリを削除すると、一時的に保持していたデータもすべて削除されます。</p>
+  </div>
+
+  <p class="rev">制定日: 2026年9月22日</p>
+</section>
+
+<footer class="wrap">テモト — 端末の中で仕事を終わらせる道具</footer>
+</body>
+</html>
